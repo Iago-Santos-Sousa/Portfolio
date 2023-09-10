@@ -1,0 +1,57 @@
+@use "../../assets/styles/variables";
+
+#skills {
+  background-color: variables.$background-dark-blue;
+}
+
+.skills-container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-text {
+  min-height: 400px;
+  width: 50%;
+}
+
+.skills-cards {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: all 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
+    transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+
+  & .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 130px;
+    background-color: #151515;
+    position: relative;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    transition: 1s all ease;
+
+    &:hover {
+      border: 1px solid greenyellow;
+    }
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

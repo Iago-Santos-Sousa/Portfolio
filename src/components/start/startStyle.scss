@@ -1,0 +1,56 @@
+@use "../../assets/styles/variables";
+#start {
+  padding: 0px 50px;
+  position: relative;
+  background-color: variables.$background-medium-blue;
+}
+
+.start-home {
+  color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+  padding: 5rem 0;
+  background-image: url("../../assets/images/code.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: padding-box;
+  background-size: contain;
+
+  .start-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & h2 {
+      max-width: 650px;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    & h3 {
+      font-size: 1.8rem;
+      max-width: 600px;
+      font-weight: 300;
+    }
+    & a {
+      text-decoration: none;
+      background: #0083b0;
+      padding: 20px 32px;
+      max-width: 250px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 400;
+    }
+  }
+
+  // .start-img {
+  //   width: 30%;
+  //   & img {
+  //     width: 100%;
+  //   }
+  // }
+}

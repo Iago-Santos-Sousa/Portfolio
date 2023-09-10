@@ -1,0 +1,36 @@
+@use "./assets/styles/variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+  // color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px auto 60px;
+}
+
+header {
+  background-color: variables.$background-light-blue;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+main {
+}
+
+footer {
+  background-color: variables.$background-light-blue;
+}
+
+.grid-layout {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
