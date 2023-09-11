@@ -1,0 +1,23 @@
+@use "../../assets/styles/variables";
+
+#footer {
+  background-color: variables.$background-light-blue;
+  padding: 0.5rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .footer-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .footer-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+}

@@ -1,54 +1,48 @@
+import { useState } from "react";
 import "./skills.scss";
-import html from "../../assets/images/html-hover.svg";
+import { skillsImages } from "../../utils/skillsImages";
 
 const Skills = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseOut = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <section id="skills">
       <div className="grid-layout">
         <div className="skills-container">
           <article className="skills-text">
-            <h2>
-              Habilidades <span>.</span>
-            </h2>
-            <p>*passe o cursor do mouse no card para ler*</p>
+            <h2>Habilidades...</h2>
+            <p>
+              {hoveredIndex !== null
+                ? skillsImages.map(
+                    (e, index) => hoveredIndex === index && e.description,
+                  )
+                : "*passe o cursor do mouse no card para ler*"}
+            </p>
           </article>
           <div className="skills-cards">
-            <div className="html skill">
-              <img src={html} width="60px" height="60px" alt="HTML" />
-            </div>
-            <div className="css skill">
-              <img src="" width="60px" height="60px" alt="CSS" />
-            </div>
-            <div className="bootstrap skill">
-              <img src="" width="60px" height="60px" alt="bootstrap" />
-            </div>
-            <div className="tailwind skill">
-              <img src="" width="60px" height="60px" alt="tailwind CSS" />
-            </div>
-            <div className="sass skill">
-              <img src="" width="60px" height="60px" alt="SASS" />
-            </div>
-            <div className="java-script skill">
-              <img src="" width="60px" height="60px" alt="JavaScript" />
-            </div>
-            <div className="type-script skill">
-              <img src="" width="60px" height="60px" alt="TypeScript" />
-            </div>
-            <div className="react skill">
-              <img src="" width="60px" height="60px" alt="React.js" />
-            </div>
-            <div className="git skill">
-              <img src="" width="60px" height="60px" alt="Git" />
-            </div>
-            <div className="git-hub skill">
-              <img src="" width="60px" height="60px" alt="GitHub" />
-            </div>
-            <div className="npm skill">
-              <img src="" width="60px" height="60px" alt="NPM" />
-            </div>
-            <div className="sql skill">
-              <img src="" width="60px" height="60px" alt="SQL" />
-            </div>
+            {skillsImages.map((e, index) => (
+              <div
+                key={index}
+                onMouseOver={() => handleMouseOver(index)}
+                onMouseOut={handleMouseOut}
+                className={`${e.className} skill`}
+              >
+                <img
+                  src={hoveredIndex === index ? e.srcHover : e.src}
+                  width="60px"
+                  height="60px"
+                  alt={`${hoveredIndex === index ? e.className : ""}`}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

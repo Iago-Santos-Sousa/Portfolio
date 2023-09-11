@@ -3,10 +3,10 @@
   padding: 0px 50px;
   position: relative;
   background-color: variables.$background-medium-blue;
+  color: #ffffff;
 }
 
 .start-home {
-  color: #ffffff;
   width: 100%;
   overflow: hidden;
   padding: 5rem 0;
@@ -46,11 +46,4 @@
       font-weight: 400;
     }
   }
-
-  // .start-img {
-  //   width: 30%;
-  //   & img {
-  //     width: 100%;
-  //   }
-  // }
 }
