@@ -13,7 +13,9 @@ const Projects = () => {
               <div className="info">
                 <h1>{element.h1}</h1>
                 <p>{element.p}</p>
-                <button>{element.btn}</button>
+                <a href={element.a} target="_blank">
+                  <button>Veja</button>
+                </a>
               </div>
             </div>
           ))}

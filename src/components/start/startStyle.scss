@@ -9,12 +9,12 @@
 .start-home {
   width: 100%;
   overflow: hidden;
-  padding: 5rem 0;
+  padding: 8rem 0 5rem 0;
   background-image: url("../../assets/images/code.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-origin: padding-box;
-  background-size: contain;
+  background-size: 40% 70%;
 
   .start-text-container {
     display: flex;
@@ -44,6 +44,9 @@
       font-size: 18px;
       color: #ffffff;
       font-weight: 400;
+      &:hover {
+        letter-spacing: 5px;
+      }
     }
   }
 }
