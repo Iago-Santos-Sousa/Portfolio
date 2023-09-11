@@ -8,7 +8,7 @@ const Projects = () => {
         <h1 className="project-title">Projetos</h1>
         <div className="projects-container">
           {projectsImages.map((element, index) => (
-            <div className="card">
+            <div className="card" key={index}>
               <img src={element.image} alt="" />
               <div className="info">
                 <h1>{element.h1}</h1>

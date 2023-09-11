@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-informations">
             <span>E-mail: iago.santos.sousa@gmail</span>
-            <span>Copyright © 2023 Iago</span>
+            <span>Copyright © {new Date().getFullYear()} Iago</span>
           </div>
           <div className="footer-icons">
             <div className="icon github">

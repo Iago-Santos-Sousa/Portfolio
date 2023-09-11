@@ -7,25 +7,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Archivo", sans-serif;
+  outline: 1px solid red;
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 60px auto auto;
+  // height: 100vh;
+  // display: grid;
+  // grid-template-rows: auto auto auto;
 }
 
 header {
   background-color: variables.$background-light-blue;
-  border: 0;
-  // border-bottom: 1px solid #ffffff;
 }
 
 main {
 }
 
 footer {
-  background-color: variables.$background-light-blue;
 }
 
 .grid-layout {
