@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./navStyle.scss";
 import logo from "../../assets/images/logo.svg";
+import MenuBurguer from "../menu_hamburguer/MenuBurguer";
 
 const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -17,7 +18,7 @@ const Nav = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="menu-icon" onClick={() => handleShowNavbar()}>
-          =
+          <MenuBurguer showNavbar={showNavbar} />
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
