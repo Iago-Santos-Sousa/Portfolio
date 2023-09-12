@@ -16,6 +16,10 @@
   width: 100%;
   z-index: 5000;
 
+  & a {
+    text-decoration: none;
+  }
+
   & .container {
     max-width: 1140px;
     margin: 0 auto;

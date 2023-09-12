@@ -13,10 +13,13 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">
-          <span>Iago</span>
-          <img src={logo} alt="logo" />
-        </div>
+        <a href="/">
+          {" "}
+          <div className="logo">
+            <span>Iago</span>
+            <img src={logo} alt="logo" />
+          </div>
+        </a>
         <div className="menu-icon" onClick={() => handleShowNavbar()}>
           <MenuBurguer showNavbar={showNavbar} />
         </div>
