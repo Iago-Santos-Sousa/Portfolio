@@ -23,12 +23,14 @@
 
   > h2 {
     max-width: 650px;
-    font-size: 3rem;
+    // font-size: 3rem;
+    font-size: min(6vw, 3rem);
     font-weight: 500;
   }
 
   > h3 {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    font-size: min(5vw, 1.8rem);
     max-width: 600px;
     font-weight: 300;
 
