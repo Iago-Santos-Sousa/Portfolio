@@ -10,14 +10,10 @@ const Nav = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const reloadPage = () => {
-    window.location.reload();
-  };
-
   return (
     <nav id="navbar">
       <div className="container">
-        <a href="/" onClick={reloadPage}>
+        <a href="/Portfolio">
           <div className="logo">
             <span>Iago</span>
             <img src={logo} alt="logo" />
