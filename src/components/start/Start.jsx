@@ -9,7 +9,7 @@ const Start = () => {
             <h3>Oi, eu sou</h3>
             <h2>Iago Dos Santos Sousa</h2>
             <h3>
-              Desenvolvedor Front-Ends
+              Desenvolvedor Front-End
               <span className="cursor-blink">|</span>
             </h3>
             <a

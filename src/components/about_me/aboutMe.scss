@@ -32,6 +32,8 @@
     }
     > p {
       text-align: justify;
+      word-break: break-all;
+      // word-wrap: break-word;
       font-size: 1.2rem;
     }
   }
