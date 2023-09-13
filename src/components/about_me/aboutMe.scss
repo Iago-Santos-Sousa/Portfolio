@@ -14,6 +14,9 @@
 
   > .avatar {
     width: 40%;
+    border: 5px white solid;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0px;
     overflow: hidden;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
@@ -23,8 +26,8 @@
 
     & img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
+      object-position: 1rem 1rem;
     }
   }
 
