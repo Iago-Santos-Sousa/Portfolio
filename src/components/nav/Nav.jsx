@@ -10,11 +10,14 @@ const Nav = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
-        <a href="/">
-          {" "}
+        <a href="" onClick={() => reloadPage()}>
           <div className="logo">
             <span>Iago</span>
             <img src={logo} alt="logo" />
