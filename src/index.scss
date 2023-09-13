@@ -34,3 +34,15 @@ footer {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: variables.$background-dark-blue;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #111;
+}
