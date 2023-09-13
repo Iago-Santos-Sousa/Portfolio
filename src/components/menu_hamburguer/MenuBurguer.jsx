@@ -1,4 +1,4 @@
-import hamburguer from "./hamburguer.scss";
+import "./hamburguer.scss";
 const MenuBurguer = ({ showNavbar }) => {
   return (
     <button className={`${showNavbar && "active-menu"}`} id="btn-menu">

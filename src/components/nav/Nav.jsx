@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <a href="" onClick={() => reloadPage()}>
+        <a href="/" onClick={() => reloadPage()}>
           <div className="logo">
             <span>Iago</span>
             <img src={logo} alt="logo" />
