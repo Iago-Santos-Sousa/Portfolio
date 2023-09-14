@@ -10,14 +10,31 @@
   justify-content: space-between;
   align-items: center;
 
-  & .footer-informations {
+  > .footer-informations {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  & .footer-icons {
+  > .footer-icons {
     display: flex;
     gap: 1.5rem;
+    position: relative;
+  }
+}
+
+.footer-icons {
+  > icon {
+    position: absolute;
+  }
+
+  > .icon:hover {
+    animation: rotate 0.5s linear;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }
