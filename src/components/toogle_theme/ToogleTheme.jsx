@@ -10,6 +10,7 @@ const ToogleTheme = () => {
       aria-label="Change to light theme"
       role="button"
       onClick={() => toggleTheme()}
+      style={{ cursor: "pointer" }}
     >
       <svg
         className="light-mode-icon"
