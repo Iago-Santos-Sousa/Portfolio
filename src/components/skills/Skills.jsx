@@ -27,7 +27,7 @@ const Skills = () => {
                 : "*passe o cursor do mouse no card para ler*"}
             </p>
           </article>
-          <div className="skills-cards">
+          <div className="skills-cards-container">
             {skillsImages.map((e, index) => (
               <div
                 key={index}

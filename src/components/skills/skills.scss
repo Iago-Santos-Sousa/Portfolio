@@ -27,7 +27,12 @@
 
     .skills-text p {
       max-width: 100%;
+      padding: 0 1rem;
       min-height: 160px;
+    }
+
+    .skills-cards-container {
+      width: 100%;
     }
   }
 }
@@ -47,13 +52,13 @@
   > p {
     min-height: 400px;
     overflow-wrap: break-word;
-    max-width: 80%;
+    max-width: 90%;
     line-height: 1.5rem;
     text-align: justify;
   }
 }
 
-.skills-cards {
+.skills-cards-container {
   width: 50%;
   display: flex;
   align-items: center;
@@ -74,6 +79,7 @@
   align-items: center;
   justify-content: center;
   flex: 1 0 100px;
+  // width: 100px;
   background-color: #151515;
   position: relative;
   border: 1px solid #1f1f1f;
