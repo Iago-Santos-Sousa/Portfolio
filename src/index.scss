@@ -14,8 +14,32 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  // dark-theme
+  --text-primary-light: #000000;
+  --text-primary-dark: #9ca3af;
+
+  // light-theme
+  --bg-primary-light: #ffffff;
+  --bg-primary-dark: #000000;
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --bg-primary: var(--bg-primary-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --bg-primary: var(--bg-primary-dark);
+}
+
+.App {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
 body {
-  color: #ffffff;
   height: 100vh;
   display: grid;
   grid-template-rows: auto auto auto;
@@ -41,7 +65,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: #986dff;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-track {

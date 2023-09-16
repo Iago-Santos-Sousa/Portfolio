@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Theme";
 import { useState } from "react";
 import "./skills.scss";
 import { skillsImages } from "../../utils/skillsImages";
 
 const Skills = () => {
+  const { theme } = useContext(ThemeContext);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseOver = (index) => {
@@ -14,7 +17,12 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills">
+    <section
+      id="skills"
+      className={`${
+        theme === "light-theme" ? "border-light-theme" : "border-dark-theme"
+      }`}
+    >
       <div className="grid-layout">
         <div className="skills-container">
           <article className="skills-text">

@@ -1,9 +1,8 @@
 @use "../../assets/styles/variables";
 
 #navbar {
-  border: 0;
-  border-bottom: 1px solid #ffffff;
-  background-color: variables.$background-light-blue;
+  // border: 0;
+  // background-color: variables.$background-light-blue;
   height: 60px;
   // position: relative;
   display: flex;
@@ -21,6 +20,7 @@
   }
 
   > .container {
+    position: relative;
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -55,9 +55,9 @@
     height: auto;
     display: none;
     z-index: 2000;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    // position: absolute;
+    // top: 20px;
+    // right: 20px;
   }
 
   .nav-elements {
@@ -71,7 +71,8 @@
     & ul li a {
       position: relative;
       text-decoration: none;
-      color: #ffffffff;
+      // color: #ffffffff;
+      color: inherit;
 
       &::before {
         content: "";
@@ -95,7 +96,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 644px) {
     & {
       background-color: inherit;
       border: 0;
@@ -135,4 +136,14 @@
       }
     }
   }
+}
+
+#navbar.border-light-theme {
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+#navbar.border-dark-theme {
+  // border-bottom: 1px solid #ffffff;
+  background-color: #111111;
 }

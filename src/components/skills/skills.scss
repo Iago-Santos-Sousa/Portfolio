@@ -1,8 +1,18 @@
 @use "../../assets/styles/variables";
 
 #skills {
-  background-color: variables.$background-dark-blue;
+  // background-color: variables.$background-dark-blue;
   padding: 4rem 0;
+}
+
+#skills.border-light-theme {
+  // border-top: 1px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+}
+
+#skills.border-dark-theme {
+  // border-top: 1px solid #ffffff;
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .skills-container {
@@ -84,6 +94,7 @@
   position: relative;
   border: 1px solid #1f1f1f;
   border-radius: 4px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
   transition: 1s all ease;
 
   > img {
@@ -96,6 +107,7 @@
   &:hover {
     border: none;
     background-color: #ffffff;
+    // box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
 }

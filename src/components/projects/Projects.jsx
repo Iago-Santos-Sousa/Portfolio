@@ -1,9 +1,17 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Theme";
 import "./projects.scss";
 import { projectsImages } from "../../utils/projectsImages";
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section id="projects">
+    <section
+      id="projects"
+      className={`${
+        theme === "light-theme" ? "border-light-theme" : "border-dark-theme"
+      }`}
+    >
       <div className="grid-layout">
         <h1 className="project-title">Projetos</h1>
         <div className="projects-container">

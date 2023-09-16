@@ -1,9 +1,18 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Theme";
 import "./aboutMe.scss";
 import avatar from "../../assets/images/avatar.png";
 
 const AboutMe = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <section id="about-me">
+    <section
+      id="about-me"
+      className={`${
+        theme === "light-theme" ? "border-light-theme" : "border-dark-theme"
+      }`}
+    >
       <div className="grid-layout">
         <div className="container-about">
           <div className="avatar">

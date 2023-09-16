@@ -1,9 +1,9 @@
 @use "../../assets/styles/variables";
 
 #footer {
-  background-color: variables.$background-light-blue;
+  // background-color: variables.$background-light-blue;
   padding: 0.5rem 0;
-  color: initial;
+  color: inherit;
 }
 
 .footer-container {

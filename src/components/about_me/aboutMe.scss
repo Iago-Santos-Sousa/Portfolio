@@ -1,8 +1,18 @@
 @use "../../assets/styles/variables";
 
 #about-me {
-  background-color: variables.$background-dark-blue;
+  // background-color: variables.$background-dark-blue;
   padding: 3rem 0;
+}
+
+#about-me.border-light-theme {
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+}
+
+#about-me.border-dark-theme {
+  border-top: 2px solid #1f1f1f;
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .container-about {
@@ -16,6 +26,7 @@
     border: 5px white solid;
     border-radius: 50%;
     box-shadow: 0 5px 15px 0px;
+    background-color: variables.$background-dark-blue;
     overflow: hidden;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;

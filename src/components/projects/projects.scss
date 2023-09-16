@@ -1,8 +1,18 @@
 @use "../../assets/styles/variables";
 
 #projects {
-  background-color: variables.$background-medium-blue;
+  // background-color: variables.$background-medium-blue;
   // tema light = border-top: #dddddd solid 2px;
+}
+
+#projects.border-light-theme {
+  // border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+}
+
+#projects.border-dark-theme {
+  // border-top: 1px solid #ffffff;
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .project-title {
@@ -31,7 +41,7 @@
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  // tema light =  box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.);
+  // tema light =  box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.5);
   & a {
     text-decoration: none;
   }
