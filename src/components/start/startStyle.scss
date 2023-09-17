@@ -11,8 +11,13 @@
   background-image: url("../../assets/images/code.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-origin: padding-box;
-  background-size: 40% 70%;
+  background-origin: content-box;
+  background-size: 40% 100%;
+
+  @media screen and (max-width: 956px) {
+    background-size: 100% 100%;
+    background-position: center -61px;
+  }
 }
 
 .start-text-container {

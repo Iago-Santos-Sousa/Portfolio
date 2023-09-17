@@ -65,7 +65,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #986dff;
+  background-color: variables.$background-dark-blue;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-track {
