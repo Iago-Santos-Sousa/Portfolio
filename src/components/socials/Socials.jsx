@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../Theme";
+import { ThemeContext } from "../../context/Theme";
 import "./socials-style.scss";
 import instagram from "../../assets/images/instagram.svg";
 import instagramLight from "../../assets/images/instagram-light.svg";

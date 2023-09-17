@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../Theme";
+import { ThemeContext } from "../../context/Theme";
 import { useState } from "react";
 import "./skills.scss";
 import { skillsImages } from "../../utils/skillsImages";

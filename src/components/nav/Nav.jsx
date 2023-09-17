@@ -3,7 +3,7 @@ import "./navStyle.scss";
 import logo from "../../assets/images/logo.svg";
 import MenuBurguer from "../menu_hamburguer/MenuBurguer";
 import ToogleTheme from "../toogle_theme/ToogleTheme";
-import { ThemeContext } from "../../Theme";
+import { ThemeContext } from "../../context/Theme";
 
 const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(false);

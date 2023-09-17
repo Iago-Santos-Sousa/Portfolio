@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../Theme";
+import { ThemeContext } from "../../context/Theme";
 import "./startStyle.scss";
 
 const Start = () => {
