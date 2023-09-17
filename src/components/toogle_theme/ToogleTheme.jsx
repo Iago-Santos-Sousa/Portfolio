@@ -6,7 +6,7 @@ const ToogleTheme = () => {
 
   const themeStyles = {
     cursor: "pointer",
-    padding: "8px",
+    padding: "8px 8px 5px",
     outline: "none",
     border: "none",
     borderRadius: "50%",
