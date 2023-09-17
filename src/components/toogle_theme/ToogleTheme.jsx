@@ -3,6 +3,16 @@ import { ThemeContext } from "../../Theme";
 
 const ToogleTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const themeStyles = {
+    cursor: "pointer",
+    padding: "8px",
+    outline: "none",
+    border: "none",
+    borderRadius: "50%",
+    backgroundColor: theme === "light-theme" ? "#f4f4f4" : "#242424",
+  };
+
   return (
     <a
       id="theme-switch"
@@ -10,7 +20,7 @@ const ToogleTheme = () => {
       aria-label="Change to light theme"
       role="button"
       onClick={() => toggleTheme()}
-      style={{ cursor: "pointer" }}
+      style={themeStyles}
     >
       <svg
         className="light-mode-icon"
