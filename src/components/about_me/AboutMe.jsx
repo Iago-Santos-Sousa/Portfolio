@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Theme";
 import "./aboutMe.scss";
 import avatar from "../../assets/images/avatar.png";
+import Socials from "../socials/Socials";
 
 const AboutMe = () => {
   const { theme } = useContext(ThemeContext);
@@ -25,6 +26,7 @@ const AboutMe = () => {
               apaixonado por tecnologia com habilidades sólidas em HTML, CSS,
               JavaScript, React.js e TypeScript.
             </p>
+            <Socials />
           </div>
         </div>
       </div>

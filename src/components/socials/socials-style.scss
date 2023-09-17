@@ -1,0 +1,82 @@
+:root {
+  --background: #2c2c2c;
+  --linkedin: #0a66c2;
+  --youtube: #e52d27;
+  --twitter: #1d9bf0;
+  --github: #04aa6d;
+}
+
+.background {
+  // background-color: var(--background);
+  // display: grid;
+  // place-items: center;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      justify-content: center;
+    }
+  }
+}
+
+.social-media-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  outline: 2px solid #2c2c2c;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+  background-color: #2c2c2c;
+
+  &.outline-light {
+    outline: 2px solid #2c2c2c;
+    // outline: none;
+  }
+
+  &.outline-dark {
+    outline: 2px solid #ffffff;
+  }
+}
+
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+}
+
+.social-media-button img {
+  transition: all 0.3s;
+}
+
+.social-media-button:hover img {
+  transform: scale(1.15);
+}
+
+.social-media-button:hover:nth-child(1) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.social-media-button:hover:nth-child(2) {
+  background-color: var(--linkedin);
+}
+
+.social-media-button:hover:nth-child(3) {
+  background-color: var(--github);
+}
