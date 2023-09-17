@@ -1,12 +1,20 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Theme";
 import "./startStyle.scss";
 
 const Start = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <section id="start">
       <div className="grid-layout">
         <div className="start-home">
-          <div className="start-text-container">
-            <h3>Oi, eu sou</h3>
+          <div
+            className={`start-text-container ${
+              theme === "dark-theme" && "dark-color"
+            }`}
+          >
+            <h4>Oi, eu sou</h4>
             <h2>Iago Dos Santos Sousa</h2>
             <h3>
               Desenvolvedor Front-End
