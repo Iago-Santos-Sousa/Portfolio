@@ -17,7 +17,7 @@ const AboutMe = () => {
       <div className="grid-layout">
         <div className="container-about">
           <div className="avatar">
-            <img src={avatar} alt="avatar" />
+            <img src={avatar} alt="avatar" loading="lazy" />
           </div>
           <div className="descriptions">
             <h3>Sobre mim</h3>
