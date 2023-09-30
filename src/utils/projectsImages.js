@@ -6,6 +6,7 @@ import quiz from "../assets/images/quiz.svg";
 import stopWatch from "../assets/images/stop-watch.svg";
 import timer from "../assets/images/timer.svg";
 import ageCalculator from "../assets/images/age.svg";
+import pokemon from "../assets/images/pokemon.svg";
 
 export const projectsImages = [
   {
@@ -62,5 +63,11 @@ export const projectsImages = [
     h1: "Age Calculator",
     p: "Calculadora de idade com React.js.",
     a: "https://github.com/Iago-Santos-Sousa/Age_Calculator",
+  },
+  {
+    image: pokemon,
+    h1: "Pokedex",
+    p: "Pokedex com React.js.",
+    a: "https://github.com/Iago-Santos-Sousa/Pokedex",
   },
 ];
