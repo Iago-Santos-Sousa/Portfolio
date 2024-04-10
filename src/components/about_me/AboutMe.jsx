@@ -22,9 +22,9 @@ const AboutMe = () => {
           <div className="descriptions">
             <h3>Sobre mim</h3>
             <p>
-              Meu nome é Iago Dos Santos Sousa, sou Desenvolvedor Front-End
-              apaixonado por tecnologia com habilidades sólidas em HTML, CSS,
-              JavaScript, React.js e TypeScript.
+              Meu nome é Iago Dos Santos Sousa, apaixonado por tecnologia, sou
+              desenvolvedor web especializado em JavaScript, React.js,
+              TypeScript, Node.js e SQL.
             </p>
             <Socials />
           </div>

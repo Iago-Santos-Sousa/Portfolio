@@ -17,12 +17,13 @@ const Start = () => {
             <h4>Oi, eu sou</h4>
             <h2>Iago Dos Santos Sousa</h2>
             <h3>
-              Desenvolvedor Front-End
+              Desenvolvedor Web
               <span className="cursor-blink">|</span>
             </h3>
             <a
               href="https://www.linkedin.com/in/iagosantossousa/"
               target="_blank"
+              rel="noreferrer"
             >
               Linkedin
             </a>

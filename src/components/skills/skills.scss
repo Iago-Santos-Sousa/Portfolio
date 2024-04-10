@@ -1,17 +1,14 @@
 @use "../../assets/styles/variables";
 
 #skills {
-  // background-color: variables.$background-dark-blue;
   padding: 4rem 0;
 }
 
 #skills.border-light-theme {
-  // border-top: 1px solid #dddddd;
   border-bottom: 2px solid #dddddd;
 }
 
 #skills.border-dark-theme {
-  // border-top: 1px solid #ffffff;
   border-bottom: 2px solid #1f1f1f;
 }
 
@@ -38,7 +35,7 @@
     .skills-text p {
       max-width: 100%;
       padding: 0 1rem;
-      min-height: 160px;
+      min-height: 200px;
     }
 
     .skills-cards-container {
@@ -51,11 +48,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  // width: 50%;
   flex: 1 0 50%;
 
   > h2 {
-    // font-size: 2.5rem;
     font-size: min(6vw, 2.5rem);
   }
 
@@ -89,7 +84,6 @@
   align-items: center;
   justify-content: center;
   flex: 1 0 100px;
-  // width: 100px;
   background-color: #151515;
   position: relative;
   border: 1px solid #1f1f1f;
@@ -107,7 +101,6 @@
   &:hover {
     border: none;
     background-color: #ffffff;
-    // box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
 }

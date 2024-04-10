@@ -13,7 +13,11 @@ const Footer = () => {
           </div>
           <div className="footer-icons">
             <div className="icon github">
-              <a href="https://github.com/Iago-Santos-Sousa" target="_blank">
+              <a
+                href="https://github.com/Iago-Santos-Sousa"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={githubFooter} alt="github" />
               </a>
             </div>
@@ -21,6 +25,7 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/iagosantossousa/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={linkedinFooter} alt="linkedin" />
               </a>

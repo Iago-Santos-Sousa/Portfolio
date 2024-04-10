@@ -18,8 +18,10 @@ import git from "../assets/images/git.svg";
 import gittHover from "../assets/images/git-hover.svg";
 import gitHub from "../assets/images/github.svg";
 import gitHubHover from "../assets/images/github-hover.svg";
-import npm from "../assets/images/npm.svg";
-import npmHover from "../assets/images/npm-hover.svg";
+// import npm from "../assets/images/npm.svg";
+// import npmHover from "../assets/images/npm-hover.svg";
+import nodejs from "../assets/images/nodejs-svg.svg";
+import nodejsHover from "../assets/images/nodejs-svg-hover.svg";
 import sql from "../assets/images/sql.svg";
 import sqlHover from "../assets/images/sql-hover.svg";
 
@@ -96,11 +98,11 @@ export const skillsImages = [
       "GitHub é uma plataforma baseada na web que utiliza o Git para hospedar repositórios de código-fonte e facilitar a colaboração entre desenvolvedores.",
   },
   {
-    className: "npm",
-    src: npm,
-    srcHover: npmHover,
+    className: "nodejs",
+    src: nodejs,
+    srcHover: nodejsHover,
     description:
-      "O npm é o gerenciador de pacotes oficial do Node.js e é usado para instalar, atualizar e gerenciar as dependências de um projeto JavaScript, tanto no lado do cliente quanto no lado do servidor.",
+      "Com a evolução das tecnologias web, tornou-se possível fazer o JavaScript rodar também no Back-end, O Node.js é um ambiente de execução do código JavaScript do lado servidor (server side), que na prática se reflete na possibilidade de criar aplicações standalone (autossuficientes) em uma máquina servidora, sem a necessidade do navegador.",
   },
   {
     className: "sql",
