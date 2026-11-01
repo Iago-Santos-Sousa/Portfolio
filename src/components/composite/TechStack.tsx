@@ -12,7 +12,6 @@ interface TechStackProps {
 const toSkill = (item: string | Skill): Skill =>
   typeof item === "string" ? { name: item } : item;
 
-/** Lista de Badges (composto de folhas). */
 export function TechStack({
   items,
   label,

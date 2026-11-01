@@ -8,7 +8,6 @@
     </linearGradient>
   </defs>
   <rect width="640" height="360" fill="url(#bg)"/>
-  <!-- Calendar -->
   <g transform="translate(72 48)">
     <rect width="312" height="232" rx="16" fill="#ffffff"/>
     <path d="M0 16A16 16 0 0 1 16 0h280a16 16 0 0 1 16 16v32H0z" fill="#2563eb"/>
@@ -28,7 +27,6 @@
     <rect x="244" y="164" width="40" height="32" rx="6" fill="#10b981"/>
     <path d="m86 132 7 7 14-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- Shield -->
   <g transform="translate(436 76)">
     <path d="M72 0 144 28v56c0 52-32 88-72 104C32 172 0 136 0 84V28z" fill="#10b981"/>
     <path d="M72 18 126 40v44c0 40-24 70-54 84V18z" fill="#34d399"/>

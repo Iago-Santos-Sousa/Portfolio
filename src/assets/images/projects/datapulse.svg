@@ -15,7 +15,6 @@
     <path d="M0 60h640M0 120h640M0 180h640M0 240h640M0 300h640"/>
     <path d="M80 0v360M160 0v360M240 0v360M320 0v360M400 0v360M480 0v360M560 0v360"/>
   </g>
-  <!-- CSV -->
   <g transform="translate(56 106)">
     <path d="M0 12a12 12 0 0 1 12-12h76l32 32v104a12 12 0 0 1-12 12H12a12 12 0 0 1-12-12z" fill="#ffffff"/>
     <path d="M88 0v32h32" fill="#dbeafe"/>
@@ -27,14 +26,12 @@
     </g>
     <text x="16" y="34" font-family="monospace" font-size="18" font-weight="700" fill="#1d4ed8">CSV</text>
   </g>
-  <!-- Chunks -->
   <g fill="url(#g)">
     <rect x="216" y="150" width="40" height="56" rx="8" opacity=".55"/>
     <rect x="268" y="150" width="40" height="56" rx="8" opacity=".75"/>
     <rect x="320" y="150" width="40" height="56" rx="8"/>
   </g>
   <path d="M190 178h16M372 178h44" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
-  <!-- DB -->
   <g transform="translate(432 110)" fill="none" stroke="#ffffff" stroke-width="6">
     <ellipse cx="72" cy="24" rx="64" ry="20" fill="#10b981"/>
     <path d="M8 24v88c0 11 29 20 64 20s64-9 64-20V24"/>

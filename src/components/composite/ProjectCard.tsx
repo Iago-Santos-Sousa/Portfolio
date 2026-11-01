@@ -5,7 +5,6 @@ import type { Project } from "@/types";
 import { Card } from "./card";
 import { TechStack } from "./TechStack";
 
-/** Card de projeto: composição de Card + folhas do design system. */
 export function ProjectCard({ project }: { project: Project }) {
   const { title, subtitle, description, highlights, stack, repoUrl, demoUrl, cover } =
     project;

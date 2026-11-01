@@ -8,7 +8,6 @@ interface SocialLinksProps {
   className?: string;
 }
 
-/** Fonte única dos links sociais, reutilizada no Hero, Sobre e Footer. */
 export function SocialLinks({
   links = defaultSocials,
   className,

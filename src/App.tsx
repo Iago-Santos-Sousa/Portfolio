@@ -5,7 +5,6 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 
-/** Composto raiz: a página é a composição de layout + seções. */
 export default function App() {
   return (
     <>

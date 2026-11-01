@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Retorna o id da seção visível no viewport (scroll spy),
- * usado para destacar o item ativo da navegação.
- */
 export function useActiveSection(ids: string[]): string | null {
   const [active, setActive] = useState<string | null>(ids[0] ?? null);
   const key = ids.join("|");

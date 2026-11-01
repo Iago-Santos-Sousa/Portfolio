@@ -5,7 +5,6 @@ import { Container, Heading, Text } from "@/components/ui";
 interface SectionRootProps extends HTMLAttributes<HTMLElement> {
   id: string;
   children: ReactNode;
-  /** Fundo alternado para separar seções visualmente. */
   tone?: "default" | "muted";
 }
 
@@ -33,7 +32,6 @@ export function SectionRoot({
 }
 
 interface SectionHeaderProps {
-  /** Id da seção, usado para ligar o título ao `aria-labelledby`. */
   sectionId: string;
   eyebrow: string;
   title: ReactNode;

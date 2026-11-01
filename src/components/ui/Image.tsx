@@ -10,16 +10,10 @@ interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   alt: string;
   width: number;
   height: number;
-  /** Formatos modernos (AVIF/WebP) servidos via <picture>. */
   sources?: ImageSource[];
-  /** Imagem acima da dobra: carrega cedo e com prioridade alta. */
   priority?: boolean;
 }
 
-/**
- * Imagem otimizada: dimensões explícitas (evita CLS), lazy loading e
- * decodificação assíncrona por padrão, e <picture> para AVIF/WebP.
- */
 export function Image({
   sources,
   priority = false,

@@ -11,7 +11,6 @@ interface MobileMenuProps {
   onClose: () => void;
 }
 
-/** Painel de navegação para telas < md. Fecha com Escape ou ao navegar. */
 export function MobileMenu({ id, open, items, activeId, onClose }: MobileMenuProps) {
   useEffect(() => {
     if (!open) return;

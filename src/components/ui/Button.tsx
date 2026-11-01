@@ -48,10 +48,6 @@ type AsButton = CommonProps &
 
 export type ButtonProps = AsLink | AsButton;
 
-/**
- * Botão do design system. Com `href` renderiza `<a>`; sem, `<button>`.
- * Evita o anti-padrão `<a><button/></a>`.
- */
 export function Button(props: ButtonProps) {
   const {
     variant = "primary",

@@ -1,6 +1,5 @@
 import type { ComponentType, SVGProps } from "react";
 
-/** Qualquer componente de ícone SVG (lucide-react ou react-icons). */
 export type IconComponent = ComponentType<
   SVGProps<SVGSVGElement> & { size?: number | string }
 >;

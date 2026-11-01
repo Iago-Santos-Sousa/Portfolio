@@ -3,7 +3,6 @@ import type { SkillCategory } from "@/types";
 import { Card } from "./card";
 import { TechStack } from "./TechStack";
 
-/** Card de categoria de habilidades: funciona igual em mouse e toque. */
 export function SkillCard({ category }: { category: SkillCategory }) {
   const { title, icon: Icon, skills } = category;
 
