@@ -5,15 +5,11 @@ interface SlotProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
-/**
- * Card composto (Composite Pattern): o contêiner aceita qualquer combinação
- * de partes (Media, Header, Body, Footer) pela mesma interface `children`.
- */
 export function CardRoot({ className, children, ...rest }: SlotProps) {
   return (
     <article
       className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/40 hover:shadow-xl hover:shadow-primary-600/10",
+        "group flex h-full cursor-pointer flex-col overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/40 hover:shadow-xl hover:shadow-primary-600/10",
         className,
       )}
       {...rest}

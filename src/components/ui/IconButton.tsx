@@ -7,7 +7,6 @@ const classes =
 
 interface CommonProps {
   icon: IconComponent;
-  /** Texto acessível obrigatório: o botão só tem ícone. */
   label: string;
   className?: string;
 }

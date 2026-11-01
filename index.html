@@ -26,14 +26,12 @@
       content="https://iago-santos-sousa.github.io/Portfolio/"
     />
     <script>
-      // Aplica o tema antes da primeira pintura para evitar flash (FOUC).
       (function () {
         try {
           var stored = localStorage.getItem("theme");
           var prefersDark = window.matchMedia(
             "(prefers-color-scheme: dark)",
           ).matches;
-          // "dark-theme" mantém compatibilidade com a versão anterior.
           var isDark = stored
             ? stored === "dark" || stored === "dark-theme"
             : prefersDark;

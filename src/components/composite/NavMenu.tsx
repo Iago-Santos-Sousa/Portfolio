@@ -14,7 +14,6 @@ const orientations = {
   vertical: "flex flex-col gap-1",
 };
 
-/** Lista de links de navegação; reutilizada no desktop e no menu mobile. */
 export function NavMenu({
   items,
   activeId,

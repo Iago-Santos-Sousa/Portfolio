@@ -2,17 +2,12 @@
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/jetbrains-mono";
 
-/* Dark mode por classe: <html class="dark">. Ver DESIGN_SYSTEM.md. */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ------------------------------------------------------------------ */
-/* Tokens de marca (escalas fixas)                                      */
-/* ------------------------------------------------------------------ */
 @theme {
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
 
-  /* Azul elétrico (primary) */
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
   --color-primary-200: #bfdbfe;
@@ -25,7 +20,6 @@
   --color-primary-900: #1e3a8a;
   --color-primary-950: #172554;
 
-  /* Verde vivo (accent) */
   --color-accent-50: #ecfdf5;
   --color-accent-100: #d1fae5;
   --color-accent-200: #a7f3d0;
@@ -52,16 +46,13 @@
   }
 }
 
-/* ------------------------------------------------------------------ */
-/* Tokens semânticos: trocam de valor no dark mode                      */
-/* ------------------------------------------------------------------ */
 :root {
   --background: #ffffff;
-  --surface: #f8fafc; /* slate-50 */
+  --surface: #f8fafc;
   --surface-elevated: #ffffff;
-  --foreground: #0f172a; /* slate-900 */
-  --muted: #475569; /* slate-600 */
-  --border: #e2e8f0; /* slate-200 */
+  --foreground: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
   --brand: var(--color-primary-600);
   --brand-contrast: #ffffff;
   --highlight: var(--color-accent-700);
@@ -69,12 +60,12 @@
 }
 
 .dark {
-  --background: #020617; /* slate-950 */
-  --surface: #0f172a; /* slate-900 */
+  --background: #020617;
+  --surface: #0f172a;
   --surface-elevated: #111c33;
-  --foreground: #f1f5f9; /* slate-100 */
-  --muted: #94a3b8; /* slate-400 */
-  --border: #1e293b; /* slate-800 */
+  --foreground: #f1f5f9;
+  --muted: #94a3b8;
+  --border: #1e293b;
   --brand: var(--color-primary-400);
   --brand-contrast: #020617;
   --highlight: var(--color-accent-400);
@@ -93,9 +84,6 @@
   --color-highlight: var(--highlight);
 }
 
-/* ------------------------------------------------------------------ */
-/* Base                                                                  */
-/* ------------------------------------------------------------------ */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -123,7 +111,6 @@
   }
 }
 
-/* Gradiente de marca para textos de destaque */
 @utility text-gradient {
   @apply bg-linear-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent dark:from-primary-400 dark:to-accent-400;
 }

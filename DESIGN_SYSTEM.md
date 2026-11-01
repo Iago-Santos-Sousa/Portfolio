@@ -117,7 +117,7 @@ A página tem um único `h1`, o nome no Hero. Cada seção tem um `h2`, e os car
 
 | Elemento | Raio | Elevação |
 |---|---|---|
-| Card | `rounded-xl` | `shadow-sm`; no hover, `-translate-y-1 shadow-xl shadow-primary-600/10 border-primary-500/40` |
+| Card | `rounded-xl` | `shadow-sm`; no hover, `-translate-y-1 shadow-xl shadow-primary-600/10 border-primary-500/40`; cursor `cursor-pointer` |
 | Botão, IconButton, Badge | `rounded-full` | Botão primário: `shadow-lg shadow-primary-600/25` |
 | Ícone de categoria | `rounded-lg` | Sem sombra |
 

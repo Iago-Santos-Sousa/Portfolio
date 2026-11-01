@@ -15,7 +15,6 @@ export function HeroSection({ profile = defaultProfile }: { profile?: Profile })
       aria-labelledby="inicio-title"
       className="relative isolate flex min-h-[calc(100svh-4rem)] scroll-mt-16 items-center overflow-hidden py-16"
     >
-      {/* Brilhos decorativos de fundo */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-24 -left-24 size-72 rounded-full bg-primary-500/20 blur-3xl md:size-96" />
         <div className="absolute -right-24 -bottom-24 size-72 rounded-full bg-accent-500/20 blur-3xl md:size-96" />
