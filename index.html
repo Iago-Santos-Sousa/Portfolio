@@ -1,17 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/src/assets/images/portfolio.svg"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Iago Dos Santos Sousa | Engenheiro de Software Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Iago Dos Santos Sousa, Engenheiro de Software Full Stack com 5+ anos de experiência em Node.js, TypeScript, NestJS, React e Next.js."
+    />
+    <meta name="author" content="Iago Dos Santos Sousa" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="Iago Dos Santos Sousa | Engenheiro de Software Full Stack"
+    />
+    <meta
+      property="og:description"
+      content="Node.js · TypeScript · NestJS · React · Next.js. APIs de alta performance, microsserviços e sistemas multi-tenant."
+    />
+    <meta
+      property="og:url"
+      content="https://iago-santos-sousa.github.io/Portfolio/"
+    />
+    <script>
+      // Aplica o tema antes da primeira pintura para evitar flash (FOUC).
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          // "dark-theme" mantém compatibilidade com a versão anterior.
+          var isDark = stored
+            ? stored === "dark" || stored === "dark-theme"
+            : prefersDark;
+          document.documentElement.classList.toggle("dark", isDark);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
