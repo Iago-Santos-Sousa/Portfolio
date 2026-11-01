@@ -148,7 +148,7 @@ src/components/
 | Componente | Variantes / props | Regras |
 |---|---|---|
 | `Button` | `variant: primary \| secondary \| ghost`, `size: sm \| md \| lg`, `icon`, `iconPosition`, `href`, `external` | Com `href` renderiza `<a>`; sem `href`, `<button>`. Nunca aninhe `<a><button>`. Altura mínima de 44px. |
-| `IconButton` | `icon`, `label` (obrigatório), `href?`, `external?` | 44×44px. `label` vira `aria-label` e `title`. |
+| `IconButton` | `icon`, `label` (obrigatório), `href?`, `external?` | 44×44px. `label` vira `aria-label` e `title`. Cursor `pointer` (regra base global para `button`). |
 | `Badge` | `variant: tech \| outline \| highlight`, `icon?` | Usa `font-mono text-xs`. |
 | `Heading` | `level: 1–4` | Ver tipografia. |
 | `Text` | `variant: body \| muted \| lead` | Ver tipografia. |
@@ -214,6 +214,7 @@ O lucide-react 1.x não tem ícones de marca. Para GitHub, LinkedIn, AWS e Java,
 - [ ] Link "Pular para o conteúdo" como primeiro elemento focável.
 - [ ] `focus-visible:ring-2 ring-primary-500` em todo elemento interativo.
 - [ ] Alvos de toque ≥ 44×44px.
+- [ ] Elementos clicáveis (`button`, `[role=button]`) com `cursor: pointer`; desabilitados com cursor padrão.
 - [ ] Menu mobile com `aria-expanded`/`aria-controls` e fechamento por `Escape`.
 - [ ] Links externos com `target="_blank" rel="noopener noreferrer"`.
 - [ ] Contraste AA nos dois temas (ver 2.4).
