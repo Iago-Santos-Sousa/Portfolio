@@ -26,14 +26,12 @@
       content="https://iago-santos-sousa.github.io/Portfolio/"
     />
     <script>
-      // Aplica o tema antes da primeira pintura para evitar flash (FOUC).
       (function () {
         try {
           var stored = localStorage.getItem("theme");
           var prefersDark = window.matchMedia(
             "(prefers-color-scheme: dark)",
           ).matches;
-          // "dark-theme" mantém compatibilidade com a versão anterior.
           var isDark = stored
             ? stored === "dark" || stored === "dark-theme"
             : prefersDark;
@@ -41,8 +39,8 @@
         } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="/Portfolio/assets/index-CpdF5sc1.js"></script>
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-PqYyB6wb.css">
+    <script type="module" crossorigin src="/Portfolio/assets/index-BF2CySVK.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-eBPxbmd6.css">
   </head>
   <body>
     <div id="root"></div>
